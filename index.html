@@ -2,21 +2,21 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Mở Shopee để nhận file</title>
+  <title>Nhấn để nhận tài nguyên</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h2>🛍 Mở Shopee để nhận file</h2>
-  <p>Vui lòng nhấn nút bên dưới, Shopee sẽ mở ra và file sẽ tự tải sau vài giây.</p>
-  
-  <button onclick="handleClick()">Mở Shopee & tải file</button>
+  <h2>🎁 Tặng tài nguyên miễn phí</h2>
+  <p>👉 Nhấn nút bên dưới để mở Shopee và tải tài nguyên:</p>
+
+  <button onclick="redirect()">Nhận tài nguyên</button>
 
   <script>
-    function handleClick() {
-      window.open('https://s.shopee.vn/5L1Tb76XLG', '_blank'); // affiliate link
-      setTimeout(() => {
+    function redirect() {
+      window.open('https://s.shopee.vn/5L1Tb76XLG', '_blank');
+      setTimeout(function() {
         window.location.href = 'https://drive.google.com/file/d/1-0r7RUTCBjojhT4kBbgxxHuee4EbziT1/view?usp=drivesdk';
-      }, 6000);
+      }, 5000); // chờ 5 giây rồi chuyển tiếp
     }
   </script>
 </body>
