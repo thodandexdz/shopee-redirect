@@ -2,17 +2,22 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Đang mở Shopee...</title>
+  <title>Mở Shopee để nhận file</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="6;url=https://drive.google.com/file/d/1-0r7RUTCBjojhT4kBbgxxHuee4EbziT1/view?usp=drivesdk">
-  <script>
-    window.onload = function() {
-      window.open('https://s.shopee.vn/5L1Tb76XLG', '_blank');
-    };
-  </script>
 </head>
 <body>
-  <h2>🔁 Thổ Dân Dex nhớ FOLLOW NHA...</h2>
-  <p>Vui lòng chờ vài giây, file sẽ tự động tải sau đó.</p>
+  <h2>🛍 Mở Shopee để nhận file</h2>
+  <p>Vui lòng nhấn nút bên dưới, Shopee sẽ mở ra và file sẽ tự tải sau vài giây.</p>
+  
+  <button onclick="handleClick()">Mở Shopee & tải file</button>
+
+  <script>
+    function handleClick() {
+      window.open('https://s.shopee.vn/5L1Tb76XLG', '_blank'); // affiliate link
+      setTimeout(() => {
+        window.location.href = 'https://drive.google.com/file/d/1-0r7RUTCBjojhT4kBbgxxHuee4EbziT1/view?usp=drivesdk';
+      }, 6000);
+    }
+  </script>
 </body>
 </html>
